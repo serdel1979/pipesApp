@@ -4,6 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Instalar PrimeNg
+
+```npm install primeng --save```
+```npm install primeicons --save```
+
+Para usar el estilo lara blue, en angular.json 
+
+```
+node_modules/primeicons/primeicons.css
+node_modules/primeng/resources/themes/lara-light-blue/theme.css
+node_modules/primeng/resources/primeng.min.css
+```
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
