@@ -5,6 +5,8 @@ import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
 import { VentasModule } from './ventas/ventas.module';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import localeEs from '@angular/common/locales/es-AR';
 import localeFr from '@angular/common/locales/fr';
 
@@ -20,7 +22,8 @@ registerLocaleData(localeFr, 'fr');
     VentasModule,
     BrowserModule,
     AppRouterModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent]
