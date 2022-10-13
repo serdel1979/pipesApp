@@ -8,6 +8,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoComunesComponent {
 
-  constructor() { }
+
+
+
+  nombre: string = 'Sergio';
+  genero: string = 'masculino';
+  toggle: boolean = false;
+
+  invitacionMapa = {
+    'masculino' : 'invitarlo',
+    'femenino' : 'invitarla'
+  }
+
+
+  clientes: string[] = ['Juan','Felipe','Sandro','Jacinto','Pedro'];
+  clientesMapa = {
+    '=0' : 'no hay nadie esperando',
+    '=1' : 'tenemos un cliente esperando',
+    'other' : 'tenemos # clientes esperando '
+  }
+
+
+  cambiarPersona(){
+    if(!this.toggle){
+      this.nombre = 'Mariana';
+      this.genero = 'femenino';
+    }else{
+      this.nombre = 'Sergio';
+      this.genero = 'masculino';
+    }    
+    this.toggle = !this.toggle;
+  }
+
+  borrarPersona(){
+    this.clientes.pop();    
+  }
+
 
 }
