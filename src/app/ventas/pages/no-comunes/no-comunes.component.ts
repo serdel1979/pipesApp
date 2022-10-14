@@ -45,4 +45,26 @@ export class NoComunesComponent {
   }
 
 
+  persona = {
+    nombre: 'Sergio',
+    edad: 35,
+    direccion: '27, Berisso'
+  }
+
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Goku',
+      vuela: false
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    }
+  ]
+
+
 }
