@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdenarComponent implements OnInit {
 
+
+  tog:boolean = false;
+  case: string = 'A mayúsculas'
+
+
   constructor() { }
 
   ngOnInit(): void {
+    !this.tog? this.case = 'A mayúsculas' : this.case = 'A minúsculas'
+  }
+
+  toggle(){
+    this.tog = !this.tog;  
+    !this.tog? this.case = 'A mayúsculas' : this.case = 'A minúsculas'
   }
 
 }

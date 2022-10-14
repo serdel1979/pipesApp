@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, resolveForwardRef } from '@angular/core';
+import { interval } from 'rxjs';
 
 
 @Component({
@@ -65,6 +66,19 @@ export class NoComunesComponent {
       vuela: false
     }
   ]
+
+
+  //async pipe
+
+  miObservable = interval(1000);
+
+  valorPromesa = new Promise((resolve, reject)=>{
+    
+    setTimeout(()=>{
+      resolve('Hay data');
+    },3500);
+    
+  });
 
 
 }

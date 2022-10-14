@@ -5,6 +5,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
 import { VentasModule } from './ventas/ventas.module';
 
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import localeEs from '@angular/common/locales/es-AR';
