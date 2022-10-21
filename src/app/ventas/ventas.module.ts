@@ -8,6 +8,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { ButtonModule } from 'primeng/button';
 import { MayusculasPipe  } from './pipes/mayusculas.pipe';
 import { VuelaPipe } from './pipes/vuela.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VuelaPipe } from './pipes/vuela.pipe';
     BasicosComponent,
     OrdenarComponent,
     MayusculasPipe,
-    VuelaPipe
+    VuelaPipe,
+    SortPipe
   ],
   exports:[
     NumerosComponent,
