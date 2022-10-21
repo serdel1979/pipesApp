@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 
 @Component({
@@ -25,7 +24,7 @@ export class OrdenarComponent implements OnInit {
     color: Color.rojo
   },{
     nombre: 'Linterna Verde',
-    vuela: false,
+    vuela: true,
     color: Color.verde
   }]
 
