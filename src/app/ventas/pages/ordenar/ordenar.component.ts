@@ -9,6 +9,7 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 export class OrdenarComponent implements OnInit {
 
 
+  ordenarPor: string = '';
 
   heroes: Heroe[] = [{
     nombre: 'Superman',
@@ -41,6 +42,10 @@ export class OrdenarComponent implements OnInit {
   toggle() {
     this.tog = !this.tog;
     !this.tog ? this.case = 'A mayúsculas' : this.case = 'A minúsculas'
+  }
+
+  cambiarOrden(valor:string){
+    this.ordenarPor = valor;
   }
 
 }
